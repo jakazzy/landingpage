@@ -1,11 +1,74 @@
-.rule{
-    color: red;
+// variables
+$deepBlue: #032f3e;
+$sectionHeading: 24px;
+$offwhite: #f8f9fb;
+$bannerHeading: 46px;
+
+// mixins
+@mixin banner{
+    width: 100%;
+    position: relative;
+    color: white;
+
+    .banner-content{
+        position: absolute;
+        top: 50px;
+        width: 100%;
+    }
+    img{
+        width: 100%;
+    }
+    span{
+        font-size: $bannerHeading;
+        display: block;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    span.title{
+        font-weight: normal;
+        margin-bottom: 30px;
+    }
 }
 
-.rule a{
-    color: blue;
+#main-nav{
+    background-color: $deepBlue;
+    ul{
+        width: 100%;
+    }
+    li{
+        float: left;
+        width: 14%;
+    }
+    a{
+        color:  $offwhite;
+        text-decoration: none;
+        padding: 16px;
+        display: block;
+        text-align: center;
+    }
 }
 
-.rule a span{
-    color: pink;
+#main-nav ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+section h1{
+    font-size: $sectionHeading;
+    color: $deepBlue;
+}
+
+.lead-banner{
+    @include banner;
+    text-align: right;
+}
+
+.lessons-banner{
+    @include banner;
+    li{
+        text-transform: uppercase;
+        font-size: 20px;
+        max-width:  500px;
+        margin: 60px 0;
+    }
 }
