@@ -1,0 +1,16 @@
+/* line 1, ../../Documents/sass-landingpage/scss/styles.scss */
+.rule {
+  color: red;
+}
+
+/* line 5, ../../Documents/sass-landingpage/scss/styles.scss */
+.rule a {
+  color: blue;
+}
+
+/* line 9, ../../Documents/sass-landingpage/scss/styles.scss */
+.rule a span {
+  color: pink;
+}
+
+/*# sourceMappingURL=styles.css.map */
