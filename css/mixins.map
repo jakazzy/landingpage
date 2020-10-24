@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "mixins.css",
+	"sources": [
+		"../scss/mixins.scss"
+	],
+	"sourcesContent": [
+		"\n\n// mixins\n@mixin banner{\n    width: 100%;\n    position: relative;\n    color: white;\n\n    .banner-content{\n        position: absolute;\n        top: 50px;\n        width: 100%;\n    }\n    img{\n        width: 100%;\n    }\n    span{\n        font-size: $bannerHeading;\n        display: block;\n        text-transform: uppercase;\n        font-weight: bold;\n    }\n    span.title{\n        font-weight: normal;\n        margin-bottom: 30px;\n    }\n}\n\n@mixin clearFix{\n    &:after{\n        content: '';\n        display: block;\n        clear: both;\n    }\n}"
+	],
+	"names": [],
+	"mappings": ""
+}

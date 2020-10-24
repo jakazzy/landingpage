@@ -1,43 +1,16 @@
-// variables
-$deepBlue: #032f3e;
-$sectionHeading: 24px;
-$offwhite: #f8f9fb;
-$bannerHeading: 46px;
-
-// mixins
-@mixin banner{
-    width: 100%;
-    position: relative;
-    color: white;
-
-    .banner-content{
-        position: absolute;
-        top: 50px;
-        width: 100%;
-    }
-    img{
-        width: 100%;
-    }
-    span{
-        font-size: $bannerHeading;
-        display: block;
-        text-transform: uppercase;
-        font-weight: bold;
-    }
-    span.title{
-        font-weight: normal;
-        margin-bottom: 30px;
-    }
-}
+@import 'reset';
+@import 'variables';
+@import 'mixins';
 
 #main-nav{
     background-color: $deepBlue;
     ul{
         width: 100%;
+        @include clearFix;
     }
     li{
         float: left;
-        width: 14%;
+        width: (100% / 6);
     }
     a{
         color:  $offwhite;
@@ -45,14 +18,13 @@ $bannerHeading: 46px;
         padding: 16px;
         display: block;
         text-align: center;
+        &:hover{
+            background-color: #333;
+        }
     }
 }
 
-#main-nav ul:after{
-    content: '';
-    display: block;
-    clear: both;
-}
+
 section h1{
     font-size: $sectionHeading;
     color: $deepBlue;
@@ -70,5 +42,30 @@ section h1{
         font-size: 20px;
         max-width:  500px;
         margin: 60px 0;
+    }
+}
+
+#services {
+    margin-bottom: 60px;
+    li{
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        width: (100% / 3);
+    }
+    img{
+        width: 60%;
+        margin: 20px 20%
+    }
+    a{
+        text-decoration: none;
+        color: $deepBlue;
+        font-weight: bold;
+        &:hover{
+            color: red;
+        }
+    }
+    ul{
+        @include clearFix;
     }
 }

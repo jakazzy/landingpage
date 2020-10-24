@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "variables.css",
+	"sources": [
+		"../scss/variables.scss"
+	],
+	"sourcesContent": [
+		"// variables\n$deepBlue: #032f3e;\n$sectionHeading: 24px;\n$offwhite: #f8f9fb;\n$bannerHeading: 46px;"
+	],
+	"names": [],
+	"mappings": ""
+}
