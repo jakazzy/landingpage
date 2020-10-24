@@ -44,7 +44,7 @@ li {
   width: 100%;
 }
 
-/* line 30, ../../Documents/sass-landingpage/scss/mixins.scss */
+/* line 33, ../../Documents/sass-landingpage/scss/mixins.scss */
 #main-nav ul:after {
   content: '';
   display: block;
@@ -57,7 +57,14 @@ li {
   width: 16.66667%;
 }
 
-/* line 15, ../../Documents/sass-landingpage/scss/styles.scss */
+@media screen and (max-width: 600px) {
+  /* line 11, ../../Documents/sass-landingpage/scss/styles.scss */
+  #main-nav li {
+    width: 100%;
+  }
+}
+
+/* line 19, ../../Documents/sass-landingpage/scss/styles.scss */
 #main-nav a {
   color: #f8f9fb;
   text-decoration: none;
@@ -66,18 +73,18 @@ li {
   text-align: center;
 }
 
-/* line 21, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 25, ../../Documents/sass-landingpage/scss/styles.scss */
 #main-nav a:hover {
-  background-color: #333;
+  background-color: #054960;
 }
 
-/* line 28, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 32, ../../Documents/sass-landingpage/scss/styles.scss */
 section h1 {
   font-size: 24px;
   color: #032f3e;
 }
 
-/* line 33, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 37, ../../Documents/sass-landingpage/scss/styles.scss */
 .lead-banner {
   width: 100%;
   position: relative;
@@ -105,13 +112,20 @@ section h1 {
   font-weight: bold;
 }
 
-/* line 23, ../../Documents/sass-landingpage/scss/mixins.scss */
+@media screen and (max-width: arg) and (min-width: 1200px) {
+  /* line 17, ../../Documents/sass-landingpage/scss/mixins.scss */
+  .lead-banner span {
+    font-size: 68px;
+  }
+}
+
+/* line 26, ../../Documents/sass-landingpage/scss/mixins.scss */
 .lead-banner span.title {
   font-weight: normal;
   margin-bottom: 30px;
 }
 
-/* line 38, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 42, ../../Documents/sass-landingpage/scss/styles.scss */
 .lessons-banner {
   width: 100%;
   position: relative;
@@ -138,13 +152,20 @@ section h1 {
   font-weight: bold;
 }
 
-/* line 23, ../../Documents/sass-landingpage/scss/mixins.scss */
+@media screen and (max-width: arg) and (min-width: 1200px) {
+  /* line 17, ../../Documents/sass-landingpage/scss/mixins.scss */
+  .lessons-banner span {
+    font-size: 68px;
+  }
+}
+
+/* line 26, ../../Documents/sass-landingpage/scss/mixins.scss */
 .lessons-banner span.title {
   font-weight: normal;
   margin-bottom: 30px;
 }
 
-/* line 40, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 44, ../../Documents/sass-landingpage/scss/styles.scss */
 .lessons-banner li {
   text-transform: uppercase;
   font-size: 20px;
@@ -152,12 +173,12 @@ section h1 {
   margin: 60px 0;
 }
 
-/* line 48, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 52, ../../Documents/sass-landingpage/scss/styles.scss */
 #services {
   margin-bottom: 60px;
 }
 
-/* line 50, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 54, ../../Documents/sass-landingpage/scss/styles.scss */
 #services li {
   float: left;
   box-sizing: border-box;
@@ -165,29 +186,47 @@ section h1 {
   width: 33.33333%;
 }
 
-/* line 56, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 60, ../../Documents/sass-landingpage/scss/styles.scss */
 #services img {
   width: 60%;
   margin: 20px 20%;
 }
 
-/* line 60, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 64, ../../Documents/sass-landingpage/scss/styles.scss */
 #services a {
   text-decoration: none;
   color: #032f3e;
   font-weight: bold;
 }
 
-/* line 64, ../../Documents/sass-landingpage/scss/styles.scss */
+/* line 68, ../../Documents/sass-landingpage/scss/styles.scss */
 #services a:hover {
-  color: red;
+  color: #3e1203;
 }
 
-/* line 30, ../../Documents/sass-landingpage/scss/mixins.scss */
+/* line 33, ../../Documents/sass-landingpage/scss/mixins.scss */
 #services ul:after {
   content: '';
   display: block;
   clear: both;
+}
+
+/* line 77, ../../Documents/sass-landingpage/scss/styles.scss */
+#projects li {
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 2%;
+  width: 23.5%;
+}
+
+/* line 45, ../../Documents/sass-landingpage/scss/mixins.scss */
+#projects li:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* line 80, ../../Documents/sass-landingpage/scss/styles.scss */
+#projects li img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
